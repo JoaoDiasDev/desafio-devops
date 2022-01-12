@@ -49,7 +49,7 @@ Faça um fork e realize commits ao longo do processo para que possamos entender 
 
 > O nginx.conf não estava passando a porta que a aplicação estaria rodando de acordo na linha `proxy_pass`.
 
-`Foi modificada a linha proxy_pass http://app; para proxy_pass http://app:3000; ao nginx.conf`
+`Foi modificada a linha proxy_pass http://app; para proxy_pass http://app:3000; no nginx.conf`
 
 #
 
@@ -75,7 +75,7 @@ Faça um fork e realize commits ao longo do processo para que possamos entender 
 
 > No arquivo connectionDb.js o nome da base de dados estava declarado incorretamente, não estava de acordo com o que estava no docker-compose.
 
-`Foi modificada a linha database: process.env.DATABASE || "nodedb", para database: process.env.DATABASE || "node_db", `
+`Foi modificada a linha database: process.env.DATABASE || "nodedb", para database: process.env.DATABASE || "node_db", no connectionDb.js`
 
 #
 
