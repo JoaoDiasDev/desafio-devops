@@ -17,11 +17,10 @@ Faça um fork e realize commits ao longo do processo para que possamos entender 
 
 ## Como rodar a aplicação
 
-#
 
 - Clone o projeto `https://github.com/JoaoDiasDev/desafio-devops.git`
 - Na raiz do projeto, onde se encontra o arquivo `docker-compose.yaml` use o comando `docker-compose build`
-- Após a finalização das builds das imagens dos containers proceda para a pasta `node` e dentro dela rode o comando `npm install`
+- Opcional: Após a finalização das builds das imagens dos containers proceda para a pasta `node` e dentro dela rode o comando `npm install` verifique se não gerou nenhum erro
 - Volte para a raiz do projeto e rode o comando `docker-compose up -d`
 - Agora já é possivel acessar a aplicação na url `http://localhost:3000`
 
@@ -29,7 +28,6 @@ Faça um fork e realize commits ao longo do processo para que possamos entender 
 
 ## Ajustes Feitos no Projeto
 
-#
 
 ### MYSQL
 
@@ -54,6 +52,10 @@ Faça um fork e realize commits ao longo do processo para que possamos entender 
 #
 
 ### NODE
+
+>Imagem do node 15 estava gerando alguns warnings críticos.
+
+`Foi modificada a primeira linha do Dockerfile para node:16`
 
 > O Dockerfile do NODE não estava copiando o package.json para o container.
 
