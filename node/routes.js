@@ -16,6 +16,8 @@ routes.get("/", (_, res) => {
       html += element.name + "<br>";
     });
 
+    html += "<h2>By JoãoDias :)</h2>";
+
     return res.send(html);
   });
 });
