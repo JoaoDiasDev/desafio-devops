@@ -53,6 +53,10 @@ Faça um fork e realize commits ao longo do processo para que possamos entender 
 
 ### NODE
 
+>Imagem do node 15 estava gerando alguns warnings críticos.
+
+`Foi modificada a primeira linha do Dockerfile para node:16`
+
 > O Dockerfile do NODE não estava copiando o package.json para o container.
 
 `Foi adicionada a linha COPY package*.json ./ ao Dockerfile`
