@@ -1,8 +1,12 @@
-FROM node:15
+FROM node:16
 
 WORKDIR /usr/src/app
 
+COPY package*.json ./
+
 COPY . .
+
+RUN npm install
 
 RUN apt-get update && apt-get install -y wget
 
@@ -13,3 +17,5 @@ RUN wget https://github.com/jwilder/dockerize/releases/download/$DOCKERIZE_VERSI
     && rm dockerize-linux-amd64-$DOCKERIZE_VERSION.tar.gz
 
 EXPOSE 3000
+
+CMD ["npm","run","start"]
