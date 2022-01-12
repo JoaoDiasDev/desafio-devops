@@ -17,7 +17,6 @@ Faça um fork e realize commits ao longo do processo para que possamos entender 
 
 ## Como rodar a aplicação
 
-#
 
 - Clone o projeto `https://github.com/JoaoDiasDev/desafio-devops.git`
 - Na raiz do projeto, onde se encontra o arquivo `docker-compose.yaml` use o comando `docker-compose build`
@@ -29,7 +28,6 @@ Faça um fork e realize commits ao longo do processo para que possamos entender 
 
 ## Ajustes Feitos no Projeto
 
-#
 
 ### MYSQL
 
